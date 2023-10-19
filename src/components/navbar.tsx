@@ -7,10 +7,10 @@ const Navbar = () => {
     <header className={"py-6 px-4"}>
       <div className={"container flex justify-between items-center"}>
         <Link href="/">
-          <h3 className={"text-green-300 font-semibold text-xl"}>Jhm.</h3>
+          <h3 className={"text-olive-green font-semibold text-xl"}>Jhm.</h3>
         </Link>
-        <div className="icon-container text-green-300 text-base flex">
-          <FaSun />
+        <div className="icon-container text-olive-green text-lg flex">
+          <FaSun className="cursor-pointer" />
           <FaBars className={"ms-4 cursor-pointer"} />
         </div>
       </div>
