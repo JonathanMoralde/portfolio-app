@@ -1,6 +1,8 @@
+import EducationalBg from "@/components/educationalbg/educationbg";
 import Navbar from "@/components/navbar";
+import SectionTitle from "@/components/sectionTitle/section_title";
 import StackCard from "@/components/techstack/stack_card";
-import React from "react";
+import React, { useState } from "react";
 
 const techStackImages = [
   "/techstack/React-icon.svg",
@@ -15,56 +17,80 @@ const techStackImages = [
   "/techstack/Figma Icon (Community).svg",
 ];
 
+const educationalBgDetails = [
+  {
+    school: "Bicol University Polangui",
+    yr: "2020-Present",
+    description: "Bachelor of Science in Information Technology",
+  },
+  {
+    school: "Universidad de Sta. Isabel",
+    yr: "2018-2020",
+    description: "Science, Technology, Engineering, and Mathematics",
+  },
+  {
+    school: "Universidad de Sta. Isabel - Pili Campus",
+    yr: "2014-2018",
+    description: "Junior High School",
+  },
+  {
+    school: "Pili Central School",
+    yr: "2008-2014",
+    description: "Elementary School",
+  },
+];
+
 const About = () => {
   return (
-    <main className="min-h-screen">
-      <Navbar />
+    <>
+      <main className="min-h-screen">
+        <Navbar />
+        {/* About section */}
+        <section className="container text-white px-4 py-10">
+          <article className="container">
+            <SectionTitle text="About" />
+            <p className="mb-4 text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              placerat sapien eros, non interdum turpis sodales sit amet.
+            </p>
+            <p className=" text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+        </section>
 
-      {/* About section */}
-      <section className="container text-white px-4 py-10">
-        <article className="container">
-          <h3 className="text-3xl mb-4 font-semibold">About</h3>
-          <p className="mb-4 text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat
-            sapien eros, non interdum turpis sodales sit amet.
-          </p>
-          <p className=" text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </article>
-      </section>
+        {/* Tech stack section */}
+        <section className="container text-white px-4 pb-10">
+          <article className="container">
+            <h3 className="text-3xl mb-4 font-semibold">Technology Stack</h3>
+            <div className="container flex flex-wrap">
+              {techStackImages.map((url, index) => (
+                <StackCard key={index} url={url} />
+              ))}
+            </div>
+          </article>
+        </section>
 
-      {/* Tech stack section */}
-      <section className="container text-white px-4 pb-10">
-        <article className="container">
-          <h3 className="text-3xl mb-4 font-semibold">Technology Stack</h3>
-          <div className="container flex flex-wrap">
-            {/* <StackCard url="/techstack/React-icon.svg" />
-            <StackCard url="/techstack/Bootstrap_logo.svg" />
-            <StackCard url="/techstack/Tailwind_CSS_logo.svg" />
-            <StackCard url="/techstack/expressjs-icon.svg" />
-            <StackCard url="/techstack/next-js-seeklogo.com.svg" />
-            <StackCard url="/techstack/PHP-logo.svg" />
-            <StackCard url="/techstack/mysql-logo-svgrepo-com.svg" />
-            <StackCard url="/techstack/flutter-svgrepo-com.svg" />
-            <StackCard url="/techstack/Firebase_Logo_Vertical_Lockup.svg" />
-            <StackCard url="/techstack/Figma Icon (Community).svg" /> */}
-            {techStackImages.map((url, index) => (
-              <StackCard key={index} url={url} />
+        {/* Education background section */}
+        <section className="container text-white px-4 pb-10">
+          <article className="container">
+            <h3 className="text-3xl mb-4 font-semibold">
+              Educational Background
+            </h3>
+          </article>
+          <article className="container flex flex-wrap">
+            {educationalBgDetails.map((entry, index) => (
+              <EducationalBg
+                key={index}
+                school={entry.school}
+                yr={entry.yr}
+                description={entry.description}
+              />
             ))}
-          </div>
-        </article>
-      </section>
-
-      {/* Education background section */}
-      <section className="container text-white px-4 pb-10">
-        <article className="container">
-          <h3 className="text-3xl mb-4 font-semibold">
-            Educational Background
-          </h3>
-        </article>
-      </section>
-    </main>
+          </article>
+        </section>
+      </main>
+    </>
   );
 };
 

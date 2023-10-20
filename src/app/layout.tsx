@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "500",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
