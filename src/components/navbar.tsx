@@ -1,16 +1,17 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { FaBars, FaSun } from "react-icons/fa";
 import Drawer from "./drawer/drawer";
 
-interface NavbarProps {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const openDrawer = () => {
+    setIsOpen(true);
+  };
+
   return (
     <>
       <header className={"py-6 px-4"}>
@@ -20,16 +21,11 @@ const Navbar = () => {
           </Link>
           <div className="icon-container text-olive-green text-lg flex">
             <FaSun className="cursor-pointer" />
-            <FaBars
-              className={"ms-4 cursor-pointer"}
-              onClick={(e: React.MouseEvent<HTMLElement>) =>
-                console.log("Clicked")
-              }
-            />
+            <FaBars className={"ms-4 cursor-pointer"} onClick={openDrawer} />
           </div>
         </div>
       </header>
-      <Drawer />
+      <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };
