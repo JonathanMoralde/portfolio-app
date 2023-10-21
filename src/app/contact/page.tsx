@@ -4,7 +4,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <main>
+    <main className="min-h-screen">
       <Navbar />
 
       {/* Contact Section */}

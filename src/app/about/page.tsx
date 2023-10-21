@@ -49,7 +49,8 @@ const About = () => {
         <section className="container text-white px-4 py-10">
           <article className="container">
             <SectionTitle text="About" />
-            <p className="mb-4 text-xl">
+
+            <p className="mb-4 text-xl ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               placerat sapien eros, non interdum turpis sodales sit amet.
             </p>
@@ -62,7 +63,8 @@ const About = () => {
         {/* Tech stack section */}
         <section className="container text-white px-4 pb-10">
           <article className="container">
-            <h3 className="text-3xl mb-4 font-semibold">Technology Stack</h3>
+            <SectionTitle text="Technology Stack" />
+
             <div className="container flex flex-wrap">
               {techStackImages.map((url, index) => (
                 <StackCard key={index} url={url} />
@@ -73,11 +75,8 @@ const About = () => {
 
         {/* Education background section */}
         <section className="container text-white px-4 pb-10">
-          <article className="container">
-            <h3 className="text-3xl mb-4 font-semibold">
-              Educational Background
-            </h3>
-          </article>
+          <SectionTitle text="Educational Background" />
+
           <article className="container flex flex-wrap">
             {educationalBgDetails.map((entry, index) => (
               <EducationalBg

@@ -8,10 +8,10 @@ const CertificationCard = () => {
       <h3 className="mb-1">Javascript Developer</h3>
       <p className={"text-sm mb-1"}>FreeCodeCamp</p>
       <div className="flex">
-        <Link href="#" className="me-1">
+        <Link href="#" className="flex group ">
           View Certificate
+          <FaLongArrowAltRight className="group-hover:translate-x-2 transition-transform ms-1 self-center text-2xl" />
         </Link>
-        <FaLongArrowAltRight className="self-center text-xl" />
       </div>
     </div>
   );

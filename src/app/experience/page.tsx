@@ -5,7 +5,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <main>
+    <main className="min-h-screen">
       <Navbar />
 
       {/* Certification Section */}
