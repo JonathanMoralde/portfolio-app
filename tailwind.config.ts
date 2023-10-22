@@ -14,6 +14,7 @@ const config: Config = {
       },
       height: {
         "sm-hero": "30.625rem",
+        "lg-hero": "80vh",
       },
       colors: {
         "olive-green": "#8DAD93",

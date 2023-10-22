@@ -11,20 +11,19 @@ export default function Home() {
     <>
       <main className="min-h-content bg-hero-pattern-dark">
         <Navbar />
-
         {/* Hero Section */}
-        <section className=" h-sm-hero flex flex-col justify-between md:justify-center items-center md:text-left md:flex-row ">
+        <section className=" h-sm-hero lg:h-lg-hero lg:overflow-hidden flex flex-col justify-between md:justify-center items-center md:text-left md:flex-row ">
           {/* Text */}
-          <div className="container px-4 pt-4 md:w-2/5  md:me-[-3.5rem]">
-            <h3 className="dark:text-white md:text-2xl text-xl font-semibold">
+          <div className="container px-4 pt-4 md:w-2/5  md:me-[-3.5rem] lg:me-[-10rem]">
+            <h3 className="dark:text-white lg:text-4xl md:text-2xl text-xl font-semibold">
               Software Developer
             </h3>
-            <h1 className="text-olive-green md:text-6xl text-5xl font-semibold uppercase">
+            <h1 className="text-olive-green lg:text-8xl md:text-6xl text-5xl font-semibold uppercase">
               Jonathan Moralde
             </h1>
           </div>
           {/* Image */}
-          <div className="h-3/4 w-full relative md:h-full md:w-3/5 md:me-[-5rem]">
+          <div className="h-3/4 w-full relative md:h-full md:w-3/5 md:me-[-5rem] lg:me-[-12rem]">
             <Image
               src="/darkmode.svg"
               alt="Image of Jonathan Moralde"
@@ -35,10 +34,15 @@ export default function Home() {
         </section>
 
         {/* Recent Projects Section */}
-        <section className="w-full py-10 px-4 md:px-10 bg-gray-950 text-white text-center md:text-left">
-          <div className="flex justify-between items-center">
+        <section className="w-full py-10 px-4 md:px-10 lg:px-28 bg-gray-950 text-white text-center md:text-left">
+          <div className="flex flex-col md:flex-row justify-between items-center">
             <SectionTitle text="Recent Projects" />
-            <StyledBtn text="View All" margin="mx-0 mb-4" />
+            <StyledBtn
+              text="View All"
+              isLink={true}
+              href="/projects"
+              margin="mx-0 mb-4"
+            />
           </div>
 
           <article className="grid grid-cols-1 gap-4 md:grid-cols-2">
