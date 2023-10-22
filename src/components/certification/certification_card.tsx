@@ -4,9 +4,9 @@ import { FaLocationArrow, FaLongArrowAltRight } from "react-icons/fa";
 
 const CertificationCard = () => {
   return (
-    <div className="container mb-4 bg-white text-black py-4 px-3 rounded">
+    <div className="container shadow bg-white text-black py-4 px-3 rounded">
       <h3 className="mb-1">Javascript Developer</h3>
-      <p className={"text-sm mb-1"}>FreeCodeCamp</p>
+      <p className={"text-sm mb-1 font-light"}>FreeCodeCamp</p>
       <div className="flex">
         <Link href="#" className="flex group ">
           View Certificate

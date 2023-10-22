@@ -16,7 +16,7 @@ const Drawer = ({ isOpen, setIsOpen }: DrawerProps) => {
 
   return (
     <div
-      className={`bg-white fixed top-0 left-0 right-0 bottom-0 transition-all ${
+      className={`bg-white dark:bg-gray-950 dark:text-white fixed top-0 left-0 right-0 bottom-0 transition-all ${
         !isOpen ? "translate-x-full" : ""
       } z-10`}
     >

@@ -41,7 +41,8 @@ export default function Home() {
             <StyledBtn text="View All" margin="mx-0 mb-4" />
           </div>
 
-          <article className="container">
+          <article className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <ProjectCard />
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />

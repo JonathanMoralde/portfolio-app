@@ -46,8 +46,8 @@ const About = () => {
       <main className="min-h-screen">
         <Navbar />
         {/* About section */}
-        <section className="container text-white px-4 py-10">
-          <article className="container">
+        <section className="w-full text-white px-4 py-10 md:px-10">
+          <article className="w-full">
             <SectionTitle text="About" />
 
             <p className="mb-4 text-xl ">
@@ -61,11 +61,11 @@ const About = () => {
         </section>
 
         {/* Tech stack section */}
-        <section className="container text-white px-4 pb-10">
-          <article className="container">
+        <section className="w-full text-white px-4 md:px-10 pb-10">
+          <article className="w-full">
             <SectionTitle text="Technology Stack" />
 
-            <div className="container flex flex-wrap">
+            <div className="w-full flex flex-wrap">
               {techStackImages.map((url, index) => (
                 <StackCard key={index} url={url} />
               ))}
@@ -74,10 +74,10 @@ const About = () => {
         </section>
 
         {/* Education background section */}
-        <section className="container text-white px-4 pb-10">
+        <section className="w-full text-white px-4 md:px-10 pb-10">
           <SectionTitle text="Educational Background" />
 
-          <article className="container flex flex-wrap">
+          <article className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {educationalBgDetails.map((entry, index) => (
               <EducationalBg
                 key={index}

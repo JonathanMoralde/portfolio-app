@@ -9,12 +9,14 @@ const Experience = () => {
       <Navbar />
 
       {/* Certification Section */}
-      <section className="container px-4 py-10 text-white">
-        <article className="container">
+      <section className="w-full px-4 md:px-10 py-10 text-white">
+        <article className="w-full">
           <SectionTitle text="Certifications" />
-          <CertificationCard />
-          <CertificationCard />
-          <CertificationCard />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <CertificationCard />
+            <CertificationCard />
+            <CertificationCard />
+          </div>
         </article>
       </section>
     </main>

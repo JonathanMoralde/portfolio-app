@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full pb-10 bg-gray-950">
+    <div className="w-full pb-6 md:pb-10 bg-gray-950">
       {/* divider */}
-      <div className=" h-1 bg-olive-green mx-10 mb-4"></div>
+      <div className=" h-1 bg-olive-green mx-4 md:mx-10 mb-4"></div>
       {/* logo & social icons */}
-      <div className="flex justify-between items-center px-10">
+      <div className="flex justify-between items-center px-4 md:px-10">
         <Link href="/" className="text-xl text-white me-4">
           Jhm.
         </Link>

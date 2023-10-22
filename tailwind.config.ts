@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       width: {
         "28%": "28%",
+        "22%": "22%",
       },
       height: {
         "sm-hero": "30.625rem",
