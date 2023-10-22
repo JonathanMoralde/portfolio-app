@@ -7,17 +7,46 @@ import {
   FaFacebook,
   FaGithub,
   FaInstagram,
+  FaMoon,
   FaSun,
 } from "react-icons/fa";
 import Drawer from "./drawer/drawer";
 
+type Theme = "light" | "dark";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [theme, setTheme] = useState<Theme>("dark");
   // TODO fix issue with initial render making useState not work
 
   const openDrawer = () => {
     setIsOpen(true);
   };
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    } else {
+      setTheme("light");
+      window.localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme") as Theme | null;
+    if (localTheme) {
+      setTheme(localTheme);
+      if (localTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    } else if (window.matchMedia("(prefers-color-scheme: dark").matches) {
+      setTheme("dark");
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 
   return (
     <>
@@ -58,7 +87,9 @@ const Navbar = () => {
             <Link href="/" className="ms-4 max-sm:hidden">
               <FaGithub />
             </Link>
-            <FaSun className="cursor-pointer ms-4" />
+            <button className="ms-4" onClick={toggleTheme}>
+              {theme === "dark" ? <FaSun /> : <FaMoon />}
+            </button>
             <FaBars
               className={"ms-4 cursor-pointer md:hidden"}
               onClick={openDrawer}

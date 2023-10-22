@@ -46,7 +46,7 @@ const About = () => {
       <main className="min-h-screen">
         <Navbar />
         {/* About section */}
-        <section className="w-full text-white px-4 py-10 md:px-10 lg:px-28">
+        <section className="w-full dark:text-white px-4 py-10 md:px-10 lg:px-28">
           <article className="w-full">
             <SectionTitle text="About" />
 
@@ -61,7 +61,7 @@ const About = () => {
         </section>
 
         {/* Tech stack section */}
-        <section className="w-full text-white px-4 md:px-10 lg:px-28 pb-10">
+        <section className="w-full dark:text-white px-4 md:px-10 lg:px-28 pb-10">
           <article className="w-full">
             <SectionTitle text="Technology Stack" />
 
@@ -74,7 +74,7 @@ const About = () => {
         </section>
 
         {/* Education background section */}
-        <section className="w-full text-white px-4 md:px-10 lg:px-28 pb-10">
+        <section className="w-full dark:text-white px-4 md:px-10 lg:px-28 pb-10">
           <SectionTitle text="Educational Background" />
 
           <article className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">

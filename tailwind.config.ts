@@ -25,9 +25,11 @@ const config: Config = {
       },
       backgroundImage: {
         "hero-pattern-dark": "url('/dark-hero-bg.png')",
+        "hero-pattern-light": "url('/light-hero-bg.png')",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };
 export default config;
