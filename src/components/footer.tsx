@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <div className="w-full pb-6 md:pb-10">
       {/* divider */}
-      <div className=" h-1 bg-olive-green mx-4 md:mx-10 lg:mx-28 mb-4 md:mb-5 lg:mb-6"></div>
+      <div className=" h-1 bg-olive-green mx-4 md:mx-10 lg:mx-48 mb-4 md:mb-5 lg:mb-6"></div>
       {/* logo & social icons */}
-      <div className="flex justify-between items-center px-4 md:px-10 lg:px-28">
+      <div className="flex justify-between items-center px-4 md:px-10 lg:px-48">
         <Link
           href="/"
           className="font-semibold text-xl md:text-3xl lg:text-4xl dark:text-white me-4"

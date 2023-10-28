@@ -37,7 +37,7 @@ const StyledBtn = ({
         height ?? ""
       } ${margin ?? "mx-auto mb-4"} ${
         padding ?? "py-2 px-8"
-      } rounded text-xl dark:text-white hover:bg-gray-950 hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors`}
+      } rounded-lg text-xl dark:text-white hover:bg-gray-950 hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors`}
     >
       {text}
     </Link>

@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={"py-6 px-4 md:py-9 lg:py-16 md:px-10 lg:px-28"}>
+      <nav className={"py-6 px-4 md:py-9 lg:py-16 md:px-10 lg:px-48"}>
         <div className={"w-full flex justify-between items-center"}>
           <Link href="/" className="">
             <h3
