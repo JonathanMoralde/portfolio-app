@@ -51,10 +51,12 @@ const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
           <ProjectSkeleton />
         </>
       ) : (
-        data?.map((proj) => {
-          const id = proj.id;
-
-          return <ProjectCard key={id} data={proj} />;
+        data?.map((proj, index) => {
+          return (
+            <div key={index}>
+              <ProjectCard data={proj} />
+            </div>
+          );
         })
       )}
     </>
