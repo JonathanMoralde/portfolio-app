@@ -4,12 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 type ProjectCardProps = {
+  key: number;
   data: Project;
 };
 
-const ProjectCard = ({ data }: ProjectCardProps) => {
+const ProjectCard = ({ key, data }: ProjectCardProps) => {
   return (
-    <div className=" w-full">
+    <div key={key} className=" w-full">
       <Link href={data.project_link} target="_blank">
         <div className=" w-full h-64 relative bg-hero-pattern-dark dark:bg-hero-pattern-light rounded-lg shadow-lg group transition-transform py-4 overflow-hidden">
           <Image
@@ -26,9 +27,10 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
           <h3 className="mt-2 text-2xl font-semibold">{data.title}</h3>
         </Link>
         <div className="flex mt-2">
-          {data.stack.map((s) => {
+          {data.stack.map((s, index) => {
             return (
               <div
+                key={index}
                 className={`flex items-center me-4 ${
                   s === "REACT" ? "bg-cyan-300" : ""
                 } ${s === "BOOTSTRAP" ? "bg-violet-400" : ""} ${
