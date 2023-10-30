@@ -62,7 +62,7 @@ const Navbar = () => {
             </h3>
           </Link>
           <div className="max-sm:hidden w-1/2">
-            <ul className="list-none dark:text-white flex justify-around font-semibold md:text-xl lg:text-2xl">
+            <ul className="list-none dark:text-white flex justify-around font-normal md:text-xl lg:text-2xl">
               <li>
                 <Link href="/about">About</Link>
               </li>

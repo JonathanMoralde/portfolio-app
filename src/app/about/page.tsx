@@ -50,12 +50,29 @@ const About = () => {
           <article className="w-full">
             <SectionTitle text="About" />
 
-            <p className="mb-4 text-xl lg:text-3xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              placerat sapien eros, non interdum turpis sodales sit amet.
+            <p className="mb-4 text-xl lg:text-2xl">
+              Hi! I'm Jonathan, a 4th-year BSIT student. As a developer, my
+              mission is to bridge the gap between people and technology by
+              creating systems, which include websites, web apps, and mobile
+              apps. I do full-stack development as well as web/mobile design.
             </p>
-            <p className=" text-xl lg:text-3xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p className="mb-4 text-xl lg:text-2xl">
+              I love creating user-friendly and intuitive interfaces with a
+              focus on minimal and clean designs because I believe that user
+              experience should be prioritized. I have built e-commerce,
+              point-of-sale systems, and other interactive apps that you can
+              check out in my <a href="/projects">projects section.</a>
+            </p>
+            <p className="mb-4 text-xl lg:text-2xl">
+              In my free time, I'm dedicated to improving my coding skills by
+              watching code tutorials and doing hands-on projects. I also
+              explore different technologies, trends, and tools in order to
+              expand my knowledge.
+            </p>
+            <p className=" text-xl lg:text-2xl">
+              I aspire to become a software engineer who is capable of creating
+              solutions for different problems. For now, my goal is to gain
+              experience as I take on projects from clients.
             </p>
           </article>
         </section>

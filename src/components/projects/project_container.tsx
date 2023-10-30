@@ -46,7 +46,7 @@ const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
 
   return (
     <>
-      {isLoading ? ( // Conditionally render skeleton cards when loading
+      {isLoading ? (
         <>
           <ProjectSkeleton />
         </>

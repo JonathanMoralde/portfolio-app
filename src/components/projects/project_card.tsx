@@ -9,6 +9,18 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ key, data }: ProjectCardProps) => {
+  const stackClassMap: Record<string, string> = {
+    REACT: "bg-cyan-200",
+    BOOTSTRAP: "bg-violet-400",
+    HTML5: "bg-orange-300",
+    CSS3: "bg-sky-200",
+    PHP: "bg-indigo-300",
+    JAVASCRIPT: "bg-yellow-200",
+    MYSQL: "bg-yellow-300",
+    FLUTTER: "bg-blue-300",
+    FIREBASE: "bg-amber-300",
+  };
+
   return (
     <div key={key} className=" w-full">
       <Link href={data.project_link} target="_blank">
@@ -24,27 +36,21 @@ const ProjectCard = ({ key, data }: ProjectCardProps) => {
       </Link>
       <div className="w-full">
         <Link href={data.project_link} target="_blank" className="inline-block">
-          <h3 className="mt-2 text-2xl font-semibold">{data.title}</h3>
+          <h3 className="mt-2 text-xl lg:text-2xl font-semibold">
+            {data.title}
+          </h3>
         </Link>
-        <div className="flex mt-2">
+        <div className="flex max-sm:justify-center mt-2">
           {data.stack.map((s, index) => {
+            const className = `flex items-center me-2 lg:me-4 ${
+              stackClassMap[s] || ""
+            } px-2 py-1 rounded-xl text-xs lg:text-sm`;
             return (
-              <div
-                key={index}
-                className={`flex items-center me-4 ${
-                  s === "REACT" ? "bg-cyan-300" : ""
-                } ${s === "BOOTSTRAP" ? "bg-violet-400" : ""} ${
-                  s === "HTML5" ? "bg-orange-400" : ""
-                } ${s === "CSS3" ? "bg-sky-300" : ""} ${
-                  s === "PHP" ? "bg-indigo-400" : ""
-                } ${s === "JAVASCRIPT" ? "bg-yellow-300" : ""} ${
-                  s === "MYSQL" ? "bg-yellow-400" : ""
-                } ${s === "FLUTTER" ? "bg-blue-300" : ""} ${
-                  s === "FIREBASE" ? "bg-amber-400" : ""
-                }  px-2 py-1 rounded-xl text-sm`}
-              >
+              <div key={index} className={className}>
                 <div className="h-1 w-1 rounded-full bg-gray-950  me-1"></div>
-                <p className="text-gray-950 tracking-wider font-medium">{s}</p>
+                <p className="text-gray-950 max-sm:tracking-wide tracking-wider font-medium">
+                  {s}
+                </p>
               </div>
             );
           })}

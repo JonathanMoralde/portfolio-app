@@ -14,7 +14,14 @@ const Contact = () => {
           <div className="lg:text-2xl">
             <p className="mb-4">Interested in working together?</p>
             <p className="mb-4">
-              Feel free to send an email or contact me at my socials.
+              Feel free to send an{" "}
+              <a
+                href="mailto:jonathanhernandez.moralde @bicol-u.edu.ph"
+                className="border-b-2 border-gray-950 dark:border-gray-100"
+              >
+                email
+              </a>{" "}
+              or contact me at my socials.
             </p>
             <p className="mb-4">jonathanhernandez.moralde @bicol-u.edu.ph</p>
           </div>

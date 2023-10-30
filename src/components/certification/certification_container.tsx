@@ -4,12 +4,13 @@ import React, { useEffect, useState } from "react";
 import CertificationCard from "./certification_card";
 import supabase from "../../../supabase";
 import Certificate from "@/model/certificate";
-import ProjectSkeleton from "../projects/project_skeleton";
+import CertificationSkeleton from "./certification_skeleton";
 
 type CertData = Array<Certificate> | null;
 
 const CertificationContainer = () => {
   const [data, setData] = useState<CertData>(null);
+  const [isLoading, setIsLoading] = useState<Boolean>(true);
   useEffect(() => {
     const fetchCert = async () => {
       try {
@@ -22,6 +23,7 @@ const CertificationContainer = () => {
         } else {
           // Use the 'data' variable to access the fetched data
           setData(certification);
+          setIsLoading(false);
         }
       } catch (error) {
         console.error("Error:", error);
@@ -35,9 +37,13 @@ const CertificationContainer = () => {
 
   return (
     <>
-      {data?.map((certData) => {
-        return <CertificationCard data={certData} key={certData.id} />;
-      })}
+      {isLoading ? (
+        <CertificationSkeleton />
+      ) : (
+        data?.map((certData) => {
+          return <CertificationCard data={certData} key={certData.id} />;
+        })
+      )}
     </>
   );
 };

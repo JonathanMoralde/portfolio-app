@@ -11,7 +11,7 @@ const EducationalBg = (props: EducationalBgProps) => {
   return (
     <div className="container mb-4">
       <div className="flex justify-between">
-        <h3 className="text-xl lg:text-2xl w-1/2">{school}</h3>
+        <h3 className="text-xl lg:text-2xl w-[60%]">{school}</h3>
         <h5 className="bg-olive-green rounded py-1 px-2 self-center lg:text-lg">
           {yr}
         </h5>

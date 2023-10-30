@@ -9,7 +9,7 @@ const Projects = () => {
     <main>
       <Navbar />
       {/* Projects Section */}
-      <section className="w-full px-4 md:px-10 lg:px-48 py-10 dark:text-white">
+      <section className="w-full px-4 max-sm:text-center md:px-10 lg:px-48 py-10 dark:text-white">
         <SectionTitle text="Projects" />
         <article className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <ProjectContainer isLimit={false} />
