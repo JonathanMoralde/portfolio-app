@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import ProjectCard from "./project_card";
 import supabase from "../../../supabase";
 import Project from "@/model/project";
+import ProjectSkeleton from "./project_skeleton";
 
 type Data = Array<Project> | null;
 
@@ -12,7 +13,7 @@ type ProjectContainerProps = {
 
 const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
   const [data, setData] = useState<Data>(null);
-  const [sortedData, setSortedData] = useState<Data>(null);
+  const [isLoading, setIsLoading] = useState<Boolean>(true);
   useEffect(() => {
     const fetchSupabaseData = async () => {
       try {
@@ -33,6 +34,7 @@ const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
           // Use the 'data' variable to access the fetched data
 
           setData(projects);
+          setIsLoading(false);
         }
       } catch (error) {
         console.error("Error:", error);
@@ -46,10 +48,16 @@ const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
 
   return (
     <>
-      {data?.map((proj) => {
-        console.log(`id in container${proj.id}`);
-        return <ProjectCard key={proj.id} data={proj} />;
-      })}
+      {isLoading ? ( // Conditionally render skeleton cards when loading
+        <>
+          <ProjectSkeleton />
+        </>
+      ) : (
+        data?.map((proj) => {
+          console.log(`id in container${proj.id}`);
+          return <ProjectCard key={proj.id} data={proj} />;
+        })
+      )}
     </>
   );
 };

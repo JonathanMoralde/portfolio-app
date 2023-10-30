@@ -1,11 +1,10 @@
-import Drawer from "@/components/drawer/drawer";
 import Navbar from "@/components/navbar";
-import ProjectCard from "@/components/projects/project_card";
 import ProjectContainer from "@/components/projects/project_container";
+import ProjectSkeleton from "@/components/projects/project_skeleton";
 import SectionTitle from "@/components/sectionTitle/section_title";
 import StyledBtn from "@/components/styledBtn/styledBtn";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -43,7 +42,7 @@ export default function Home() {
         </section>
 
         {/* Recent Projects Section */}
-        <section className="w-full py-10 px-4 md:px-10 lg:px-48 bg-gray-50 dark:bg-gray-950 dark:text-white text-center md:text-left">
+        <section className="w-full py-10 px-4 md:px-10 lg:px-48 bg-gray-100 dark:bg-gray-950 dark:text-white text-center md:text-left">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <SectionTitle text="Recent Projects" />
             <StyledBtn

@@ -1,4 +1,5 @@
 import CertificationCard from "@/components/certification/certification_card";
+import CertificationContainer from "@/components/certification/certification_container";
 import Navbar from "@/components/navbar";
 import SectionTitle from "@/components/sectionTitle/section_title";
 import React from "react";
@@ -13,9 +14,7 @@ const Experience = () => {
         <article className="w-full">
           <SectionTitle text="Certifications" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3">
-            <CertificationCard />
-            <CertificationCard />
-            <CertificationCard />
+            <CertificationContainer />
           </div>
         </article>
       </section>
