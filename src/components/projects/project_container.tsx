@@ -52,7 +52,9 @@ const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
         </>
       ) : (
         data?.map((proj) => {
-          return <ProjectCard key={proj.id} data={proj} />;
+          const id = proj.id;
+
+          return <ProjectCard id={id} data={proj} />;
         })
       )}
     </>

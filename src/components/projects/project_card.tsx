@@ -4,13 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 type ProjectCardProps = {
-  key: any;
+  id: number;
   data: Project;
 };
 
-const ProjectCard = ({ key, data }: ProjectCardProps) => {
+const ProjectCard = ({ id, data }: ProjectCardProps) => {
+  console.log(id);
+
   return (
-    <div key={key} className=" w-full">
+    <div key={id} className=" w-full">
       <Link href={data.project_link} target="_blank">
         <div className=" w-full h-64 relative bg-hero-pattern-dark dark:bg-hero-pattern-light rounded-lg shadow-lg group transition-transform py-4 overflow-hidden">
           <Image
