@@ -4,13 +4,14 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Certificate from "@/model/certificate";
 
 type CertificationCardProps = {
+  key: any;
   data: Certificate;
 };
 
-const CertificationCard = ({ data }: CertificationCardProps, key: number) => {
+const CertificationCard = ({ key, data }: CertificationCardProps) => {
   return (
     <div
-      key={`${key}`}
+      key={key}
       className="container shadow bg-white text-black py-4 px-3 rounded-lg"
     >
       <h3 className="mb-1">{data.cert_name}</h3>

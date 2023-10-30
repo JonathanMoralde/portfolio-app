@@ -42,9 +42,7 @@ const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
     };
 
     fetchSupabaseData();
-  }, []);
-
-  console.log(data);
+  }, [isLimit]);
 
   return (
     <>
@@ -54,7 +52,6 @@ const ProjectContainer = ({ isLimit }: ProjectContainerProps) => {
         </>
       ) : (
         data?.map((proj) => {
-          console.log(`id in container${proj.id}`);
           return <ProjectCard key={proj.id} data={proj} />;
         })
       )}
