@@ -17,13 +17,21 @@ const Footer = () => {
         </Link>
 
         <div className="flex text-xl lg:text-2xl dark:text-white">
-          <Link href="/">
+          <Link href="https://www.instagram.com/tanhernandezz/" target="_blank">
             <FaInstagram />
           </Link>
-          <Link href="/" className="ms-4 ">
+          <Link
+            href="https://www.facebook.com/jonathantantantan"
+            className="ms-4 "
+            target="_blank"
+          >
             <FaFacebook />
           </Link>
-          <Link href="/" className="ms-4 ">
+          <Link
+            href="https://github.com/JonathanMoralde/"
+            className="ms-4 "
+            target="_blank"
+          >
             <FaGithub />
           </Link>
         </div>

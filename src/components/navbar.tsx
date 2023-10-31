@@ -64,27 +64,59 @@ const Navbar = () => {
           <div className="max-sm:hidden w-1/2">
             <ul className="list-none dark:text-white flex justify-around font-normal md:text-xl lg:text-2xl">
               <li>
-                <Link href="/about">About</Link>
+                <Link
+                  href="/about"
+                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/projects">Projects</Link>
+                <Link
+                  href="/projects"
+                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full"
+                >
+                  Projects
+                </Link>
               </li>
               <li>
-                <Link href="/experience">Experience</Link>
+                <Link
+                  href="/experience"
+                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full"
+                >
+                  Experience
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link
+                  href="/contact"
+                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
           <div className="text-olive-green text-xl lg:text-2xl flex">
-            <Link href="/" className="max-sm:hidden">
+            <Link
+              href="https://www.instagram.com/tanhernandezz/"
+              className="max-sm:hidden"
+              target="_blank"
+            >
               <FaInstagram />
             </Link>
-            <Link href="/" className="ms-4 max-sm:hidden">
+            <Link
+              href="https://www.facebook.com/jonathantantantan"
+              className="ms-4 max-sm:hidden"
+              target="_blank"
+            >
               <FaFacebook />
             </Link>
-            <Link href="/" className="ms-4 max-sm:hidden">
+            <Link
+              href="https://github.com/JonathanMoralde/"
+              className="ms-4 max-sm:hidden"
+              target="_blank"
+            >
               <FaGithub />
             </Link>
             <button className="ms-4" onClick={toggleTheme}>

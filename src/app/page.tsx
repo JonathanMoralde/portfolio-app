@@ -10,7 +10,7 @@ export default function Home() {
       <main className="min-h-content dark:bg-hero-pattern-dark bg-hero-pattern-light">
         <Navbar />
         {/* Hero Section */}
-        <section className=" h-[88.8vh] md:h-[80vh] lg:h-lg-hero lg:overflow-hidden flex flex-col justify-between md:justify-center items-center md:text-left md:flex-row ">
+        <section className="h-sm-hero lg:h-lg-hero lg:overflow-hidden flex flex-col justify-between md:justify-center items-center md:text-left md:flex-row ">
           {/* Text */}
           <div className="container px-4 pt-4 md:w-2/5  md:me-[-3.5rem] lg:me-[-10rem]">
             <h3 className="dark:text-white lg:text-4xl md:text-2xl text-xl font-semibold">

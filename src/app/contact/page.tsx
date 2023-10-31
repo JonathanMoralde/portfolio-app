@@ -23,7 +23,7 @@ const Contact = () => {
               </a>{" "}
               or contact me at my socials.
             </p>
-            <p className="mb-4">jonathanhernandez.moralde @bicol-u.edu.ph</p>
+            <p className="mb-4">jonathanhernandez.moralde@bicol-u.edu.ph</p>
           </div>
         </article>
       </section>
