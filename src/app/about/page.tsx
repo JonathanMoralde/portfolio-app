@@ -51,7 +51,7 @@ const About = () => {
             <SectionTitle text="About" />
 
             <p className="mb-4 text-xl lg:text-2xl">
-              Hi! I'm Jonathan, a 4th-year BSIT student. As a developer, my
+              Hi! I&apos;m Jonathan, a 4th-year BSIT student. As a developer, my
               mission is to bridge the gap between people and technology by
               creating systems, which include websites, web apps, and mobile
               apps. I do full-stack development as well as web/mobile design.
@@ -64,8 +64,8 @@ const About = () => {
               check out in my <a href="/projects">projects section.</a>
             </p>
             <p className="mb-4 text-xl lg:text-2xl">
-              In my free time, I'm dedicated to improving my coding skills by
-              watching code tutorials and doing hands-on projects. I also
+              In my free time, I&apos;m dedicated to improving my coding skills
+              by watching code tutorials and doing hands-on projects. I also
               explore different technologies, trends, and tools in order to
               expand my knowledge.
             </p>
