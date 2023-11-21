@@ -19,6 +19,9 @@ const ProjectCard = ({ key, data }: ProjectCardProps) => {
     MYSQL: "bg-yellow-300",
     FLUTTER: "bg-blue-300",
     FIREBASE: "bg-amber-300",
+    EXPRESSJS: "bg-amber-200  ",
+    MONGODB: "bg-lime-300",
+    POSTGRESQL: "bg-blue-300",
   };
 
   return (
