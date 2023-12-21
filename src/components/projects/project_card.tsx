@@ -12,6 +12,7 @@ const ProjectCard = ({ key, data }: ProjectCardProps) => {
   const stackClassMap: Record<string, string> = {
     REACT: "bg-cyan-200",
     BOOTSTRAP: "bg-violet-400",
+    TAILWIND: "bg-cyan-200",
     HTML5: "bg-orange-300",
     CSS3: "bg-sky-200",
     PHP: "bg-indigo-300",
@@ -22,6 +23,7 @@ const ProjectCard = ({ key, data }: ProjectCardProps) => {
     EXPRESSJS: "bg-amber-200  ",
     MONGODB: "bg-lime-300",
     POSTGRESQL: "bg-blue-300",
+    NEXTJS13: "bg-slate-300",
   };
 
   return (
