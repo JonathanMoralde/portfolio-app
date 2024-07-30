@@ -12,7 +12,7 @@ const Experience = () => {
       {/* Certification Section */}
       <section className="w-full px-4 md:px-10 lg:px-48 py-10 dark:text-white">
         <article className="w-full">
-          <SectionTitle text="Certifications" />
+          <SectionTitle text="Certificates" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3">
             <CertificationContainer />
           </div>
