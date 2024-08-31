@@ -13,7 +13,7 @@ const ExperienceCard = (props: Props) => {
 
       <div className="bg-white text-black  py-4 px-3 rounded-lg shadow dark:shadow-none md:w-1/2">
         <h3 className="md:text-lg lg:text-xl font-medium">{data.position}</h3>
-        <h5 className=" text-base w-1/2 text-gray-500 mb-2">{data.company}</h5>
+        <h5 className=" text-base  text-gray-500 mb-2">{data.company}</h5>
         <p className="mb-2 text-gray-700">{data.description}</p>
         <p className="text-gray-500">Tech used: {data.tech}</p>
       </div>

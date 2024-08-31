@@ -2,6 +2,7 @@ import Project from "@/model/project";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AnimateScroll from "../AnimateScroll";
 
 type ProjectCardProps = {
   data: Project;
@@ -42,23 +43,31 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
         </div>
       </Link>
       <div className="w-full">
-        <Link href={data.project_link} target="_blank" className="inline-block">
-          <h3 className="mt-2 text-xl lg:text-2xl font-semibold">
-            {data.title}
-          </h3>
-        </Link>
+        <AnimateScroll>
+          <Link
+            href={data.project_link}
+            target="_blank"
+            className="inline-block"
+          >
+            <h3 className="mt-2 text-xl lg:text-2xl font-semibold">
+              {data.title}
+            </h3>
+          </Link>
+        </AnimateScroll>
         <div className="flex max-sm:justify-center mt-2">
           {data.stack.map((s, index) => {
             const className = `flex items-center me-2 lg:me-4 ${
               stackClassMap[s] || ""
             } px-2 py-1 rounded-xl text-xs lg:text-sm shadow dark:shadow-none`;
             return (
-              <div key={index} className={className}>
-                <div className="h-1 w-1 rounded-full bg-gray-950  me-1"></div>
-                <p className="text-gray-950 max-sm:tracking-wide tracking-wider font-medium">
-                  {s}
-                </p>
-              </div>
+              <AnimateScroll key={index}>
+                <div className={className}>
+                  <div className="h-1 w-1 rounded-full bg-gray-950  me-1"></div>
+                  <p className="text-gray-950 max-sm:tracking-wide tracking-wider font-medium">
+                    {s}
+                  </p>
+                </div>
+              </AnimateScroll>
             );
           })}
         </div>

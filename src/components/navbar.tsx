@@ -1,53 +1,25 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import {
-  FaBars,
-  FaFacebook,
-  FaGithub,
-  FaInstagram,
-  FaMoon,
-  FaSun,
-} from "react-icons/fa";
+import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 import Drawer from "./drawer/drawer";
 import StyledBtn from "./styledBtn/styledBtn";
+import { motion } from "framer-motion";
+import { useTheme } from "@/context/theme-provider";
 
-type Theme = "light" | "dark";
+// type Theme = "light" | "dark";
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [theme, setTheme] = useState<Theme>("dark");
+  // const [theme, setTheme] = useState<Theme>("dark");
   // TODO fix issue with initial render making useState not work
 
   const openDrawer = () => {
     setIsOpen(true);
   };
-
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      window.localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
-    } else {
-      setTheme("light");
-      window.localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
-    }
-  };
-
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme") as Theme | null;
-    if (localTheme) {
-      setTheme(localTheme);
-      if (localTheme === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    } else if (window.matchMedia("(prefers-color-scheme: dark").matches) {
-      setTheme("dark");
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
 
   return (
     <>
@@ -59,7 +31,7 @@ const Navbar = () => {
                 "text-olive-green font-semibold text-xl md:text-2xl lg:text-3xl"
               }
             >
-              JM
+              JM.
             </h3>
           </Link>
           <div className=" w-3/4">
@@ -86,12 +58,6 @@ const Navbar = () => {
                   Experience
                 </Link>
               </li>
-              {/* <li
-                className="max-sm:hidden my-auto cursor-pointer"
-                onClick={toggleTheme}
-              >
-                {theme === "dark" ? <FaSun /> : <FaMoon />}
-              </li> */}
               <li className="max-sm:hidden">
                 <StyledBtn
                   text="REACH OUT"
@@ -105,11 +71,17 @@ const Navbar = () => {
         </div>
       </nav>
       <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="rounded-full fixed md:bottom-[3rem] md:right-[5rem] bottom-[1rem] right-[1rem] z-50 dark:bg-gray-100 bg-[#181B1A] text-olive-green shadow dark:shadow-none">
+      <motion.div
+        key={theme} // Key is used here to trigger re-mounting and animation on theme change
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.25 }}
+        className="rounded-full fixed md:bottom-[3rem] md:right-[5rem] bottom-[1rem] right-[1rem] z-50 dark:bg-gray-100 bg-[#181B1A] text-olive-green shadow dark:shadow-none"
+      >
         <button onClick={toggleTheme} className="md:p-3 p-2">
           {theme === "dark" ? <FaSun /> : <FaMoon />}
         </button>
-      </div>
+      </motion.div>
     </>
   );
 };

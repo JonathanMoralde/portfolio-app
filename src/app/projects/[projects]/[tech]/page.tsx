@@ -1,3 +1,4 @@
+import AnimateScroll from "@/components/AnimateScroll";
 import Navbar from "@/components/navbar";
 import Dropdown from "@/components/projects/dropdown";
 import ProjectContainer from "@/components/projects/project_container";
@@ -15,45 +16,47 @@ const Projects = (props: Props) => {
       <Navbar />
       {/* Projects Section */}
       <section className="w-full px-4 max-sm:text-center md:px-10 lg:px-48 py-10 dark:text-white">
-        <div className="flex justify-between items-center mb-4 lg:mb-10 ">
-          <SectionTitle text="Projects" />
+        <AnimateScroll>
+          <div className="flex justify-between items-center mb-4 lg:mb-10 ">
+            <SectionTitle text="Projects" />
 
-          <div className="flex gap-5">
-            <Dropdown
-              isProjects={true}
-              currentTech={tech}
-              currentProjects={projects}
-              label={`${projects[0].toLocaleUpperCase()}${projects.substring(
-                1
-              )} Projects`}
-              options={["All", "Freelance", "Personal"]}
-            />
-            <Dropdown
-              isProjects={false}
-              currentTech={tech}
-              currentProjects={projects}
-              label={`${tech[0].toLocaleUpperCase()}${tech.substring(1)}`}
-              options={[
-                "All",
-                "NextJS",
-                "React",
-                "Nodejs",
-                "MongoDB",
-                "VueJS",
-                "Quasar",
-                "PHP",
-                "MySQL",
-                "Tailwind",
-                "Bootstrap",
-                "Flutter",
-                "Firebase",
-                "HTML",
-                "CSS",
-                "Javascript",
-              ]}
-            />
+            <div className="flex gap-5">
+              <Dropdown
+                isProjects={true}
+                currentTech={tech}
+                currentProjects={projects}
+                label={`${projects[0].toLocaleUpperCase()}${projects.substring(
+                  1
+                )} Projects`}
+                options={["All", "Freelance", "Personal"]}
+              />
+              <Dropdown
+                isProjects={false}
+                currentTech={tech}
+                currentProjects={projects}
+                label={`${tech[0].toLocaleUpperCase()}${tech.substring(1)}`}
+                options={[
+                  "All",
+                  "NextJS",
+                  "React",
+                  "Nodejs",
+                  "MongoDB",
+                  "VueJS",
+                  "Quasar",
+                  "PHP",
+                  "MySQL",
+                  "Tailwind",
+                  "Bootstrap",
+                  "Flutter",
+                  "Firebase",
+                  "HTML",
+                  "CSS",
+                  "Javascript",
+                ]}
+              />
+            </div>
           </div>
-        </div>
+        </AnimateScroll>
         <article className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <ProjectContainer
             isLimit={false}

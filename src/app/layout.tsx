@@ -1,8 +1,8 @@
-import Navbar from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/footer";
+import { ThemeProvider } from "../context/theme-provider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,10 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${poppins.className} bg-gray-100
-        dark:bg-[#181B1A]
+        dark:bg-[#181B1A] transition-colors
         `}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         <Footer />
       </body>
     </html>
