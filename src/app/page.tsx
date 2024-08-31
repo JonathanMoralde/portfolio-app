@@ -1,7 +1,9 @@
+import AboutBtns from "@/components/aboutBtns";
 import Navbar from "@/components/navbar";
 import ProjectContainer from "@/components/projects/project_container";
 import SectionTitle from "@/components/sectionTitle/section_title";
 import StyledBtn from "@/components/styledBtn/styledBtn";
+import TechStackSlider from "@/components/techstack/techStackSlider";
 import Image from "next/image";
 
 export default function Home() {
@@ -39,16 +41,46 @@ export default function Home() {
           </div>
         </section>
 
+        {/* About section */}
+        <section className="w-full dark:text-white dark:bg-[#181B1A] bg-gray-100 px-4 py-20 md:px-10 lg:px-48">
+          <article className="w-full">
+            <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
+              Hi! I&apos;m Jonathan, a dedicated junior software developer with
+              a background in web and mobile development through internship and
+              freelance projects.
+            </p>
+            <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
+              I am committed to delivering efficient service and achieving
+              excellence in every project. Whether working in a team or
+              independently, I aim to make valuable contributions to the success
+              of projects. I am always eager to broaden my knowledge and skills
+              in order to continue progressing in software development.
+            </p>
+            <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
+              Interested in working together?
+            </p>
+
+            <AboutBtns />
+          </article>
+        </section>
+
+        <section className="w-full dark:text-white dark:bg-[#181B1A] bg-gray-100 px-4 py-20 md:px-10 lg:px-48">
+          <article>
+            <SectionTitle text="Technical Skills" className=" mb-4 lg:mb-10" />
+            <TechStackSlider />
+          </article>
+        </section>
+
         {/* Recent Projects Section */}
-        <section className="w-full py-10 px-4 md:px-10 lg:px-48 bg-gray-100 dark:bg-gray-950 dark:text-white text-center md:text-left">
+        <section className="w-full py-20 px-4 md:px-10 lg:px-48 bg-gray-100 dark:bg-[#181B1A] dark:text-white text-center md:text-left">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <SectionTitle text="Recent Projects" />
-            <StyledBtn
+            <SectionTitle text="Recent Projects" className=" mb-4 lg:mb-10" />
+            {/* <StyledBtn
               text="View All"
               isLink={true}
               href="/projects"
               margin="mx-0 mb-4"
-            />
+            /> */}
           </div>
 
           <article className="grid grid-cols-1 gap-4 md:grid-cols-2">

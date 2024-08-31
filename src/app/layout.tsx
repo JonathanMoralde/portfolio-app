@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${poppins.className} bg-gray-100
-        dark:bg-gray-950
+        dark:bg-[#181B1A]
         `}
       >
         {children}

@@ -9,7 +9,7 @@ const StackCard = (props: StackCardProps) => {
   const { url } = props;
 
   return (
-    <div className=" h-24 md:h-28 bg-white py-5 md:py-7 px-4 md:px-8 rounded shadow-lg">
+    <div className=" h-24 md:h-28 bg-white py-5 md:py-7 px-4 md:px-8 rounded shadow-lg mx-4">
       <div className="relative container h-full">
         <Image src={url} alt={url} fill className="object-contain" />
       </div>

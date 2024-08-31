@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["dtshoodlzowznesvjxpi.supabase.co"], // Add your Supabase hostname here
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "dtshoodlzowznesvjxpi.supabase.co",
+        port: "",
+        pathname: "/storage/v1/object/sign/projects/**",
+      },
+      // "dtshoodlzowznesvjxpi.supabase.co",
+    ], // Add your Supabase hostname here
   },
 };
 

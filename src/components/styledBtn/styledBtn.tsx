@@ -13,6 +13,9 @@ type StyledBtnProps = {
   btnColor?: string;
   margin?: string;
   padding?: string;
+  hoverOpacity?: boolean;
+  textColor?: string;
+  target?: string;
 };
 
 const StyledBtn = ({
@@ -25,6 +28,9 @@ const StyledBtn = ({
   onClick,
   margin,
   padding,
+  hoverOpacity,
+  textColor,
+  target,
 }: StyledBtnProps) => {
   const clicked = () => {
     console.log("clicked");
@@ -33,11 +39,16 @@ const StyledBtn = ({
   return isLink ? (
     <Link
       href={href ? href : "#"}
+      target={target ?? undefined}
       className={`${btnColor ?? "bg-olive-green"} ${width ?? ""} ${
         height ?? ""
-      } ${margin ?? "mx-auto mb-4"} ${
-        padding ?? "py-2 px-8"
-      } rounded-lg text-xl dark:text-white hover:bg-gray-950 hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors`}
+      } ${margin ?? "mx-auto mb-4"} ${padding ?? "py-2 px-8"} ${
+        textColor ? textColor : "dark:text-white"
+      } rounded-full text-xl  ${
+        hoverOpacity
+          ? "hover:opacity-80 transition-opacity"
+          : "hover:bg-[#181B1A] hover:text-white dark:hover:text-[#181B1A] dark:hover:bg-white"
+      } transition-colors`}
     >
       {text}
     </Link>
@@ -48,7 +59,11 @@ const StyledBtn = ({
         height ?? ""
       } ${margin ?? "mx-auto mb-4"} ${
         padding ?? "py-2 px-8"
-      } rounded text-xl dark:text-white dark:hover:bg-white dark:hover:text-black transition-colors`}
+      } rounded-full text-xl ${textColor ? textColor : "dark:text-white"}  ${
+        hoverOpacity
+          ? "hover:opacity-80 transition-opacity"
+          : "hover:bg-[#181B1A] hover:text-white dark:hover:text-[#181B1A] dark:hover:bg-white"
+      } transition-colors`}
     >
       {text}
     </button>

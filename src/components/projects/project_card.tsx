@@ -4,32 +4,32 @@ import Image from "next/image";
 import Link from "next/link";
 
 type ProjectCardProps = {
-  key: number;
   data: Project;
 };
 
-const ProjectCard = ({ key, data }: ProjectCardProps) => {
+const ProjectCard = ({ data }: ProjectCardProps) => {
   const stackClassMap: Record<string, string> = {
     REACT: "bg-cyan-200",
     BOOTSTRAP: "bg-violet-400",
     TAILWIND: "bg-cyan-200",
-    HTML5: "bg-orange-300",
-    CSS3: "bg-sky-200",
+    HTML: "bg-orange-300",
+    CSS: "bg-sky-200",
     PHP: "bg-indigo-300",
     JAVASCRIPT: "bg-yellow-200",
     MYSQL: "bg-yellow-300",
     FLUTTER: "bg-blue-300",
     FIREBASE: "bg-amber-300",
     EXPRESSJS: "bg-amber-200  ",
+    NODEJS: "bg-amber-200  ",
     MONGODB: "bg-lime-300",
     POSTGRESQL: "bg-blue-300",
-    NEXTJS13: "bg-slate-300",
+    NEXTJS: "bg-slate-300",
   };
 
   return (
-    <div key={key} className=" w-full">
+    <div className=" w-full">
       <Link href={data.project_link} target="_blank">
-        <div className=" w-full h-64 relative bg-hero-pattern-dark dark:bg-hero-pattern-light rounded-lg shadow-lg group transition-transform py-4 overflow-hidden">
+        <div className=" w-full h-64 relative bg-hero-pattern-dark dark:bg-hero-pattern-light rounded-lg dark:shadow-lg shadow-none group transition-transform py-4 overflow-hidden">
           <Image
             src={data.image_url}
             alt={data.title}
