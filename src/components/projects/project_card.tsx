@@ -24,6 +24,8 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
     MONGODB: "bg-lime-300",
     POSTGRESQL: "bg-blue-300",
     NEXTJS: "bg-slate-300",
+    QUASAR: "bg-violet-300",
+    VUEJS: "bg-green-200",
   };
 
   return (
@@ -49,7 +51,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
           {data.stack.map((s, index) => {
             const className = `flex items-center me-2 lg:me-4 ${
               stackClassMap[s] || ""
-            } px-2 py-1 rounded-xl text-xs lg:text-sm`;
+            } px-2 py-1 rounded-xl text-xs lg:text-sm shadow dark:shadow-none`;
             return (
               <div key={index} className={className}>
                 <div className="h-1 w-1 rounded-full bg-gray-950  me-1"></div>
