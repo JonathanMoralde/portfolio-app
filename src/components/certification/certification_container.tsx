@@ -7,7 +7,7 @@ const CertificationContainer = async () => {
 
   return (
     <>
-      {data?.map((certData) => {
+      {data?.reverse().map((certData) => {
         return <CertificationCard data={certData} key={certData.id} />;
       })}
     </>
