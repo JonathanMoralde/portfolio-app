@@ -7,7 +7,7 @@ const ExperienceCard = (props: Props) => {
   const { data } = props;
   return (
     <div className="flex flex-col md:flex-row w-full justify-center gap-1">
-      <div className="text-gray-500 uppercase w-1/4 md:text-xl lg:text-2xl">
+      <div className="text-gray-500 uppercase md:w-1/4 md:text-xl lg:text-2xl">
         <p className="">{data.date}</p>
       </div>
 
