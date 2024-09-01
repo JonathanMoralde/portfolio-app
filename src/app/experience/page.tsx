@@ -25,7 +25,7 @@ const Experience = () => {
     },
     {
       position: "Freelance Fullstack Developer",
-      company: "Document Request System",
+      company: "Barangay Document Request System",
       date: "Aug - Aug 2024",
       description:
         "Developed the admin panel for a Document Request System, enabling efficient management of document requests for a local community. The system enables accessibility of essential services and information for the constituents.",
@@ -43,7 +43,7 @@ const Experience = () => {
     {
       position: "Freelance Fullstack Developer",
       company: "Web-based Class Timetabling System",
-      date: "Dec 2024 - Jan 2024",
+      date: "Dec 2023 - Jan 2024",
       description:
         "Improved application stability and performance through code refactoring and bug resolition. The system enables efficient management of class scheduling for school admins.",
       tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
