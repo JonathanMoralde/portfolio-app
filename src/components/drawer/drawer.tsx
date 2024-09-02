@@ -16,7 +16,7 @@ const Drawer = ({ isOpen, setIsOpen }: DrawerProps) => {
 
   return (
     <div
-      className={`bg-white dark:bg-gray-950 dark:text-white fixed top-0 left-0 right-0 bottom-0 transition-all ${
+      className={`bg-white dark:bg-[#181B1A] dark:text-white fixed top-0 left-0 right-0 bottom-0 transition-all ${
         !isOpen ? "translate-x-full" : ""
       } z-10`}
     >
@@ -27,16 +27,15 @@ const Drawer = ({ isOpen, setIsOpen }: DrawerProps) => {
       <div className="container flex justify-center items-center h-full">
         <ul className="list-none h-1/4 flex flex-col justify-between text-xl font-semibold">
           <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects/all/all">Projects</Link>
           </li>
           <li>
             <Link href="/experience">Experience</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="mailto:jonathanhernandez.moralde@gmail.com">
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

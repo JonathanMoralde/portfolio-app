@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
       {/* Projects Section */}
       <section className="w-full px-4 max-sm:text-center md:px-10 lg:px-48 py-10 dark:text-white">
         <AnimateScroll>
-          <div className="flex justify-between items-center mb-4 lg:mb-10 ">
+          <div className="flex flex-col md:flex-row gap-4 justify-between items-center mb-4 lg:mb-10 ">
             <SectionTitle text="Projects" />
 
             <div className="flex gap-5">

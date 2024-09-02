@@ -16,18 +16,18 @@ const Footer = () => {
           <BackToTop />
         </div>
       </LeftToRight>
-      <div className=" mb-20">
+      <div className="mb-10 md:mb-20">
         <LeftToRight>
           <a
             href="mailto:jonathanhernandez.moralde@gmail.com"
-            className="text-lg md:text-xl lg:text-2xl"
+            className="text-base md:text-xl lg:text-2xl"
           >
             jonathanhernandez.moralde@gmail.com
           </a>
         </LeftToRight>
       </div>
       <LeftToRight>
-        <div className="mb-20 text-white text-xl lg:text-2xl flex gap-4">
+        <div className="mb-10 md:mb-20 text-white text-3xl lg:text-2xl flex gap-4">
           <Link href="https://github.com/JonathanMoralde/" target="_blank">
             <FaGithub />
           </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </LeftToRight>
 
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between gap-20 md:items-end flex-col md:flex-row">
         <ul className="list-none dark:text-white flex flex-col gap-4 font-normal text-base md:text-lg lg:text-xl">
           <li>
             <LeftToRight>
@@ -66,7 +66,7 @@ const Footer = () => {
           </li>
         </ul>
         <LeftToRight>
-          <p>
+          <p className="text-center md:text-left">
             JONATHAN MORALDE {new Date().getFullYear()}. ALL RIGHTS RESERVED
           </p>
         </LeftToRight>

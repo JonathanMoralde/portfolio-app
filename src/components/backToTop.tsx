@@ -8,7 +8,7 @@ type Props = {};
 const BackToTop = (props: Props) => {
   return (
     <button
-      className="flex items-center gap-2"
+      className="md:flex items-center gap-2 hidden "
       onClick={() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}

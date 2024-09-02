@@ -76,7 +76,7 @@ const Navbar = () => {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.25 }}
-        className="rounded-full fixed md:bottom-[3rem] md:right-[5rem] bottom-[1rem] right-[1rem] z-50 dark:bg-gray-100 bg-[#181B1A] text-olive-green shadow dark:shadow-none"
+        className="rounded-full fixed md:bottom-[3rem] md:right-[5rem] bottom-[3rem] right-[2rem] z-50 dark:bg-gray-100 bg-[#181B1A] text-olive-green shadow dark:shadow-none"
       >
         <button onClick={toggleTheme} className="md:p-3 p-2">
           {theme === "dark" ? <FaSun /> : <FaMoon />}

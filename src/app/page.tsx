@@ -14,7 +14,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="h-sm-hero lg:h-lg-hero lg:overflow-hidden flex flex-col justify-between md:justify-center items-center md:text-left md:flex-row ">
           {/* Text */}
-          <div className="container px-4 pt-4 md:w-2/5  md:me-[-3.5rem] lg:me-[-10rem]">
+          <div className="container px-4 pt-4 md:w-2/5  md:me-[-3.5rem] lg:me-[-10rem] text-center md:text-left ">
             <AnimateScroll>
               <h3 className="dark:text-white lg:text-4xl md:text-2xl text-xl font-semibold">
                 Software Developer
@@ -31,7 +31,7 @@ export default function Home() {
         </section>
 
         {/* About section */}
-        <section className="w-full dark:text-white dark:bg-[#181B1A] bg-gray-100 px-4 py-20 md:px-10 lg:px-48">
+        <section className="w-full dark:text-white dark:bg-[#181B1A] bg-gray-100 px-4 pt-20 pb-10 md:pb-20 md:px-10 lg:px-48">
           <article className="w-full">
             <AnimateScroll>
               <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
@@ -62,12 +62,12 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="w-full dark:text-white dark:bg-[#181B1A] bg-gray-100 px-4 py-20 md:px-10 lg:px-48">
+        <section className="w-full dark:text-white dark:bg-[#181B1A] bg-gray-100 px-4 py-10 md:py-20 md:px-10 lg:px-48">
           <article>
             <AnimateScroll>
               <SectionTitle
                 text="Technical Skills"
-                className=" mb-4 lg:mb-10"
+                className=" mb-4 lg:mb-10 text-center md:text-left"
               />
             </AnimateScroll>
             <AnimateScroll>
@@ -77,8 +77,8 @@ export default function Home() {
         </section>
 
         {/* Recent Projects Section */}
-        <section className="w-full py-20 px-4 md:px-10 lg:px-48 bg-gray-100 dark:bg-[#181B1A] dark:text-white text-center md:text-left">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+        <section className="w-full pt-10 md:pt-20 pb-20 px-4 md:px-10 lg:px-48 bg-gray-100 dark:bg-[#181B1A] dark:text-white text-center md:text-left">
+          <div className="">
             <AnimateScroll>
               <SectionTitle text="Recent Projects" className=" mb-4 lg:mb-10" />
             </AnimateScroll>

@@ -26,7 +26,7 @@ const AnimateScroll = ({ children }: Props) => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <motion.div variants={cardVariants}>{children}</motion.div>
     </motion.div>

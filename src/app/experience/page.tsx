@@ -74,23 +74,29 @@ const Experience = () => {
       <section className="w-full px-4 md:px-10 lg:px-48 py-10 dark:text-white">
         <article className="w-full">
           <AnimateScroll>
-            <SectionTitle text="Experiences" className=" mb-4 lg:mb-10" />
+            <SectionTitle
+              text="Experiences"
+              className=" mb-4 lg:mb-10 text-center md:text-left"
+            />
           </AnimateScroll>
+          <div className="flex flex-col gap-4">
+            {experiences.map((exp, index) => (
+              <AnimateScroll key={index}>
+                <ExperienceCard data={exp} />
+              </AnimateScroll>
+            ))}
+          </div>
         </article>
-        <div className="flex flex-col gap-4">
-          {experiences.map((exp, index) => (
-            <AnimateScroll key={index}>
-              <ExperienceCard data={exp} />
-            </AnimateScroll>
-          ))}
-        </div>
       </section>
 
       {/* Certification Section */}
       <section className="w-full px-4 md:px-10 lg:px-48 py-10 dark:text-white">
         <article className="w-full">
           <AnimateScroll>
-            <SectionTitle text="Certificates" className=" mb-4 lg:mb-10" />
+            <SectionTitle
+              text="Certificates"
+              className=" mb-4 lg:mb-10 text-center md:text-left"
+            />
           </AnimateScroll>
           <AnimateScroll>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3">

@@ -54,9 +54,9 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
             </h3>
           </Link>
         </AnimateScroll>
-        <div className="flex max-sm:justify-center mt-2">
+        <div className="flex w-full flex-wrap gap-2 lg:gap-4  max-sm:justify-center mt-2">
           {data.stack.map((s, index) => {
-            const className = `flex items-center me-2 lg:me-4 ${
+            const className = `flex items-center ${
               stackClassMap[s] || ""
             } px-2 py-1 rounded-xl text-xs lg:text-sm shadow dark:shadow-none`;
             return (

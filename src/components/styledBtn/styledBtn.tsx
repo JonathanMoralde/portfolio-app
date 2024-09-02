@@ -44,7 +44,7 @@ const StyledBtn = ({
         height ?? ""
       } ${margin ?? "mx-auto mb-4"} ${padding ?? "py-2 px-8"} ${
         textColor ? textColor : "dark:text-white"
-      } rounded-full text-xl  ${
+      } rounded-full text-sm md:text-xl  ${
         hoverOpacity
           ? "hover:opacity-80 transition-opacity"
           : "hover:bg-[#181B1A] hover:text-white dark:hover:text-[#181B1A] dark:hover:bg-white"
@@ -59,7 +59,9 @@ const StyledBtn = ({
         height ?? ""
       } ${margin ?? "mx-auto mb-4"} ${
         padding ?? "py-2 px-8"
-      } rounded-full text-xl ${textColor ? textColor : "dark:text-white"}  ${
+      } rounded-full text-sm md:text-xl ${
+        textColor ? textColor : "dark:text-white"
+      }  ${
         hoverOpacity
           ? "hover:opacity-80 transition-opacity"
           : "hover:bg-[#181B1A] hover:text-white dark:hover:text-[#181B1A] dark:hover:bg-white"
