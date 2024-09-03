@@ -70,7 +70,7 @@ const Experience = () => {
       date: "Sep - Sep 2023",
       description:
         "Integrated firebase services in the system and translated the UI design prototype to a Flutter app with an intuitive user interface. This system enables accessibility to users as it provides a platform for both the users and automobile service providers.",
-      tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
+      tech: "Flutter, Firebase",
     },
   ];
 
