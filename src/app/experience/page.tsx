@@ -51,7 +51,7 @@ const Experience = () => {
     {
       position: "Freelance Fullstack Developer",
       company: "Home Service Locator App",
-      date: "Oct - Nov 2023",
+      date: "Nov - Nov 2023",
       description:
         "Integrated firebase services in the system and other important features to ensure the application's functional suitability. This system enables accessibility and efficient communication between users and service providers.",
       tech: "Nextjs, Flutter, Firebase, TailwindCSS",
@@ -59,9 +59,17 @@ const Experience = () => {
     {
       position: "Freelance Fullstack Developer",
       company: "Web-based Enrollment Management System",
-      date: "Sep - Sep 2023",
+      date: "Oct - Oct 2023",
       description:
         "Developed the admin panel for an Enrollment Management System, enabling accessibility and efficient management of student enrollment as well as student data.",
+      tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
+    },
+    {
+      position: "Freelance Fullstack Developer",
+      company: "Automobile Service Locator App",
+      date: "Sep - Sep 2023",
+      description:
+        "Integrated firebase services in the system and translated the UI design prototype to a Flutter app with an intuitive user interface. This system enables accessibility to users as it provides a platform for both the users and automobile service providers.",
       tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
     },
   ];
