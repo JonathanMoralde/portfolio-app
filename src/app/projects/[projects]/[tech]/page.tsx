@@ -10,7 +10,6 @@ type Props = {
 };
 const Projects = (props: Props) => {
   const { projects, tech }: { projects: string; tech: string } = props.params;
-  console.log(projects, tech);
   return (
     <main>
       <Navbar />
