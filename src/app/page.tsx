@@ -17,7 +17,7 @@ export default function Home() {
           <div className="container px-4 pt-4 md:w-2/5  md:me-[-3.5rem] lg:me-[-10rem] text-center md:text-left ">
             <AnimateScroll>
               <h3 className="dark:text-white lg:text-4xl md:text-2xl text-xl font-semibold">
-                Software Developer
+                Full Stack Developer
               </h3>
             </AnimateScroll>
             <AnimateScroll>
@@ -35,20 +35,20 @@ export default function Home() {
           <article className="w-full">
             <AnimateScroll>
               <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
-                Hi! I&apos;m Jonathan, a dedicated junior software developer
-                with a background in web and mobile development through
-                internship and freelance projects.
+                Hi! I&apos;m Jonathan, a passionate junior developer with a
+                background in web and mobile development through internship and
+                freelance projects.
               </p>
             </AnimateScroll>
 
             <AnimateScroll>
               <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
-                I am committed to delivering efficient service and achieving
-                excellence in every project. Whether working in a team or
-                independently, I aim to make valuable contributions to the
-                success of projects. I am always eager to broaden my knowledge
-                and skills in order to continue progressing in software
-                development.
+                I am committed to delivering high quality output, efficient
+                service and achieving excellence in every project. Whether
+                working in a team or independently, I aim to make valuable
+                contributions to the success of projects. I am always eager to
+                broaden my knowledge and skills in order to continue progressing
+                in software development.
               </p>
             </AnimateScroll>
 
