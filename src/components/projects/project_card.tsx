@@ -3,6 +3,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AnimateScroll from "../AnimateScroll";
+import { EB_Garamond } from "next/font/google";
+
+const garamond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 type ProjectCardProps = {
   data: Project;
@@ -27,6 +33,8 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
     NEXTJS: "bg-slate-300",
     QUASAR: "bg-violet-300",
     VUEJS: "bg-green-200",
+    WORDPRESS: "bg-sky-300",
+    WOOCOMMERCE: "bg-sky-300",
   };
 
   return (
@@ -49,7 +57,9 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
             target="_blank"
             className="inline-block"
           >
-            <h3 className="mt-2 text-xl lg:text-2xl font-semibold">
+            <h3
+              className={`mt-2 text-xl lg:text-2xl font-semibold ${garamond.className}`}
+            >
               {data.title}
             </h3>
           </Link>

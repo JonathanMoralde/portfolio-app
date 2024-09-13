@@ -25,7 +25,7 @@ const Drawer = ({ isOpen, setIsOpen }: DrawerProps) => {
         className="cursor-pointer absolute right-10 top-10 text-lg text-olive-green"
       />
       <div className="container flex justify-center items-center h-full">
-        <ul className="list-none h-1/4 flex flex-col justify-between text-xl font-semibold">
+        <ul className="list-none h-1/4 flex flex-col justify-between text-xl font-semibold uppercase">
           <li>
             <Link href="/projects/all/all">Projects</Link>
           </li>

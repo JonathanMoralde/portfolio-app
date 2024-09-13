@@ -47,7 +47,7 @@ const Footer = () => {
       </LeftToRight>
 
       <div className="flex justify-between gap-20 md:items-end flex-col md:flex-row">
-        <ul className="list-none dark:text-white flex flex-col gap-4 font-normal text-base md:text-lg lg:text-xl">
+        <ul className="list-none dark:text-white flex flex-col gap-4 font-normal text-base md:text-lg lg:text-xl uppercase">
           <li>
             <LeftToRight>
               <Link href="/">Home</Link>

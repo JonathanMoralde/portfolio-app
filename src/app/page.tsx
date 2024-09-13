@@ -6,6 +6,17 @@ import TechStackSlider from "@/components/techstack/techStackSlider";
 import AnimateScroll from "../components/AnimateScroll";
 import HeroImage from "@/components/heroImage";
 
+import { EB_Garamond, Roboto } from "next/font/google";
+
+const garamond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "100", "300", "900"],
+});
+
 export default function Home() {
   return (
     <>
@@ -16,7 +27,11 @@ export default function Home() {
           {/* Text */}
           <div className="container px-4 pt-4 md:w-2/5  md:me-[-3.5rem] lg:me-[-10rem] text-center md:text-left ">
             <AnimateScroll>
-              <h3 className="dark:text-white lg:text-4xl md:text-2xl text-xl font-semibold">
+              <h3
+                // className={`dark:text-white lg:text-2xl md:text-xl text-lg font-semibold ${garamond.className} uppercase`}
+                // className={`dark:text-white lg:text-4xl md:text-2xl text-xl font-semibold uppercase`}
+                className={`dark:text-white lg:text-2xl md:text-xl text-lg font-semibold ${roboto.className} uppercase`}
+              >
                 Full Stack Developer
               </h3>
             </AnimateScroll>
@@ -34,7 +49,9 @@ export default function Home() {
         <section className="w-full dark:text-white dark:bg-[#181B1A] bg-gray-100 px-4 pt-20 pb-10 md:pb-20 md:px-10 lg:px-48">
           <article className="w-full">
             <AnimateScroll>
-              <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
+              <p
+                className={`mb-10 text-xl lg:text-[2.5rem] leading-normal ${garamond.className}`}
+              >
                 Hi! I&apos;m Jonathan, a passionate junior developer with a
                 background in web and mobile development through internship and
                 freelance projects.
@@ -42,7 +59,9 @@ export default function Home() {
             </AnimateScroll>
 
             <AnimateScroll>
-              <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
+              <p
+                className={`mb-10 text-xl lg:text-[2.5rem] leading-normal ${garamond.className}`}
+              >
                 I am committed to delivering high quality output, efficient
                 service and achieving excellence in every project. Whether
                 working in a team or independently, I aim to make valuable
@@ -53,7 +72,9 @@ export default function Home() {
             </AnimateScroll>
 
             <AnimateScroll>
-              <p className="mb-10 text-xl lg:text-[2.5rem] leading-normal">
+              <p
+                className={`mb-10 text-xl lg:text-[2.5rem] leading-normal ${garamond.className}`}
+              >
                 Interested in working together?
               </p>
 

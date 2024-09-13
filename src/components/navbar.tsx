@@ -45,7 +45,7 @@ const Navbar = () => {
               <li className="max-sm:hidden">
                 <Link
                   href="/projects/all/all"
-                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full"
+                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full uppercase"
                 >
                   Projects
                 </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
               <li className="max-sm:hidden">
                 <Link
                   href="/experience"
-                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full"
+                  className="relative after:transition-all after:absolute after:bottom-0 after:w-0 after:h-1 after:bg-olive-green after:block hover:after:w-full uppercase"
                 >
                   Experience
                 </Link>

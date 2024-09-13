@@ -51,6 +51,7 @@ const Projects = (props: Props) => {
                   "HTML",
                   "CSS",
                   "Javascript",
+                  "Wordpress",
                 ]}
               />
             </div>
