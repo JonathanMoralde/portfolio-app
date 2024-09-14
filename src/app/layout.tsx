@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins, EB_Garamond } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "../context/theme-provider";
 

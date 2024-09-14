@@ -20,7 +20,7 @@ const AboutBtns = (props: Props) => {
           text="DOWNLOAD CV"
           isLink={true}
           target="_blank"
-          href="https://drive.google.com/uc?export=download&id=1_suSG-xsNdIYS5CyyeE1WeEWRlC3jh_c"
+          href="https://drive.google.com/uc?export=download&id=1weYkQ-RRoM8RB8Q-SU3izmsbkj3bj1da"
           hoverOpacity={true}
           btnColor="bg-gray-500 dark:bg-gray-200"
           textColor="dark:text-[#181B1A] text-white"
