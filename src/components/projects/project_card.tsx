@@ -35,6 +35,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
     VUEJS: "bg-green-200",
     WORDPRESS: "bg-sky-300",
     WOOCOMMERCE: "bg-sky-300",
+    SQLITE: "bg-yellow-300",
   };
 
   return (
