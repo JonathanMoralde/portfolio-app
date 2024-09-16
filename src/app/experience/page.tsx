@@ -42,6 +42,14 @@ const Experience = () => {
     },
     {
       position: "Freelance Fullstack Developer",
+      company: "Attendance Monitoring App",
+      date: "Jan - Jan 2024",
+      description:
+        "Developed the Android app that allows the faculty members to efficiently track attendance using NFC technology. The app streamlines attendance management by also generating reports and analytics.",
+      tech: "Flutter, SQLite",
+    },
+    {
+      position: "Freelance Fullstack Developer",
       company: "Web-based Class Timetabling System",
       date: "Dec 2023 - Jan 2024",
       description:
