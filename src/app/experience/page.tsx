@@ -37,7 +37,7 @@ const Experience = () => {
       company: "Chat Messenger App",
       date: "May - Jun 2024",
       description:
-        "Developed the Android app that lets students connect with each other. Fostering collaboration, engagement, and mutual growth among students which enriches academic experience and promote interconnectedness.",
+        "Developed the Android app that lets students connect with each other. Fostering collaboration, engagement, and mutual growth among students which enriches academic experience and promotes interconnectedness.",
       tech: "Flutter, Firebase, Agora SDK, Nodejs",
     },
     {
@@ -53,7 +53,7 @@ const Experience = () => {
       company: "Web-based Class Timetabling System",
       date: "Dec 2023 - Jan 2024",
       description:
-        "Improved application stability and performance through code refactoring and bug resolition. The system enables efficient management of class scheduling for school admins.",
+        "Improved application stability and performance through code refactoring and bug resolution. The system enables efficient management of class scheduling for school admins.",
       tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
     },
     {
