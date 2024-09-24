@@ -21,65 +21,73 @@ const Experience = () => {
       date: "Feb - Apr 2024",
       description:
         "Performed software development tasks as well as quality assurance. Communicated and collaborated closely with a team of developers.",
-      tech: "Quasar, Vuejs, JSON Server, Axios, Gitlab",
+      tech: "Quasar, Vuejs, JSON Server, Axios, Git, Gitlab",
     },
     {
-      position: "Freelance Fullstack Developer",
-      company: "Barangay Document Request System",
-      date: "Aug - Aug 2024",
+      position: "Freelance/Project-based Software Developer",
+      company: "Project-based Clients",
+      date: "Sep - Aug 2024",
       description:
-        "Developed the admin panel for a Document Request System, enabling efficient management of document requests for a local community. The system enables accessibility of essential services and information for the constituents.",
-      // Implemented features such as resident and household management, blotter report tracking,  public announcements, electric bill posting, and PDF generation for official documents.
-      tech: "Next.js, Firebase",
+        "Worked on various web-based and android-based systems. Communicated with clients and transformed prototypes into functional systems that met project goals and deadlines.",
+      tech: "HTML, CSS, Javascript, Typescript, Next.js, React, Tailwind, Bootstrap, PHP, MySQL, Flutter, and Firebase",
     },
-    {
-      position: "Freelance Fullstack Developer",
-      company: "Chat Messenger App",
-      date: "May - Jun 2024",
-      description:
-        "Developed the Android app that lets students connect with each other. Fostering collaboration, engagement, and mutual growth among students which enriches academic experience and promotes interconnectedness.",
-      tech: "Flutter, Firebase, Agora SDK, Nodejs",
-    },
-    {
-      position: "Freelance Fullstack Developer",
-      company: "Attendance Monitoring App",
-      date: "Jan - Jan 2024",
-      description:
-        "Developed the Android app that allows the faculty members to efficiently track attendance using NFC technology. The app streamlines attendance management by also generating reports and analytics.",
-      tech: "Flutter, SQLite",
-    },
-    {
-      position: "Freelance Fullstack Developer",
-      company: "Web-based Class Timetabling System",
-      date: "Dec 2023 - Jan 2024",
-      description:
-        "Improved application stability and performance through code refactoring and bug resolution. The system enables efficient management of class scheduling for school admins.",
-      tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
-    },
-    {
-      position: "Freelance Fullstack Developer",
-      company: "Home Service Locator App",
-      date: "Nov - Nov 2023",
-      description:
-        "Integrated firebase services in the system and other important features to ensure the application's functional suitability. This system enables accessibility and efficient communication between users and service providers.",
-      tech: "Nextjs, Flutter, Firebase, TailwindCSS",
-    },
-    {
-      position: "Freelance Fullstack Developer",
-      company: "Web-based Enrollment Management System",
-      date: "Oct - Oct 2023",
-      description:
-        "Developed the admin panel for an Enrollment Management System, enabling accessibility and efficient management of student enrollment as well as student data.",
-      tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
-    },
-    {
-      position: "Freelance Fullstack Developer",
-      company: "Automobile Service Locator App",
-      date: "Sep - Sep 2023",
-      description:
-        "Integrated firebase services in the system and translated the UI design prototype to a Flutter app with an intuitive user interface. This system enables accessibility to users as it provides a platform for both the users and automobile service providers.",
-      tech: "Flutter, Firebase",
-    },
+
+    // {
+    //   position: "Freelance Software Developer",
+    //   company: "Barangay Document Request System",
+    //   date: "Aug - Aug 2024",
+    //   description:
+    //     "Developed the admin panel for a Document Request System, enabling efficient management of document requests for a local community. The system enables accessibility of essential services and information for the constituents.",
+    //   tech: "Next.js, TailwindCSS, Typescript, Firebase",
+    // },
+    // {
+    //   position: "Freelance Software Developer",
+    //   company: "Chat Messenger App",
+    //   date: "May - Jun 2024",
+    //   description:
+    //     "Developed the Android app that lets students connect with each other. Fostering collaboration, engagement, and mutual growth among students which enriches academic experience and promotes interconnectedness.",
+    //   tech: "Flutter, Firebase, Agora SDK, Nodejs",
+    // },
+    // {
+    //   position: "Freelance Software Developer",
+    //   company: "Attendance Monitoring App",
+    //   date: "Jan - Jan 2024",
+    //   description:
+    //     "Developed the Android app that allows the faculty members to efficiently track attendance using NFC technology. The app streamlines attendance management by also generating reports and analytics.",
+    //   tech: "Flutter, SQLite",
+    // },
+    // {
+    //   position: "Freelance Software Developer",
+    //   company: "Web-based Class Timetabling System",
+    //   date: "Dec 2023 - Jan 2024",
+    //   description:
+    //     "Improved application stability and performance through code refactoring and bug resolution. The system enables efficient management of class scheduling for school admins.",
+    //   tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
+    // },
+    // {
+    //   position: "Freelance Software Developer",
+    //   company: "Home Services Platform App",
+    //   date: "Nov - Nov 2023",
+    //   description:
+    //     "Integrated firebase services in the system and other important features to ensure the application's functional suitability. This system enables accessibility and efficient communication between users and service providers.",
+    //   tech: "Nextjs, TailwindCSS, Typescript, Flutter, Firebase",
+    // },
+    // {
+    //   position: "Freelance Software Developer",
+    //   company: "Web-based Enrollment Management System",
+    //   date: "Oct - Oct 2023",
+    //   description:
+    //     "Developed the admin panel for an Enrollment Management System, enabling accessibility and efficient management of student enrollment as well as student data.",
+    //   tech: "HTML, CSS, Javascript, Bootstrap, PHP, MySQL",
+    // },
+    // {
+    //   position: "Freelance Software Developer",
+    //   company: "Automobile Services Platform App",
+    //   date: "Sep - Sep 2023",
+    //   description:
+    //     "Integrated firebase services in the system and translated the UI design prototype to a Flutter app with an intuitive user interface. This system enables accessibility to users as it provides a platform for both the users and automobile service providers.",
+    //   tech: "Flutter, Firebase",
+    // },
   ];
 
   return (

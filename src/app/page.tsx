@@ -32,7 +32,7 @@ export default function Home() {
                 // className={`dark:text-white lg:text-4xl md:text-2xl text-xl font-semibold uppercase`}
                 className={`dark:text-white lg:text-2xl md:text-xl text-lg font-semibold ${roboto.className} uppercase`}
               >
-                Full Stack Developer
+                Software Developer
               </h3>
             </AnimateScroll>
             <AnimateScroll>
@@ -52,9 +52,9 @@ export default function Home() {
               <p
                 className={`mb-10 text-xl lg:text-[2.5rem] leading-normal ${garamond.className}`}
               >
-                Hi! I&apos;m Jonathan, a passionate junior developer with a
-                background in web and mobile development through internship and
-                freelance projects.
+                Hi! I&apos;m Jonathan, a passionate developer with a background
+                in web and mobile development through internship and freelance
+                projects.
               </p>
             </AnimateScroll>
 

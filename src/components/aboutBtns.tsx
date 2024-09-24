@@ -17,14 +17,22 @@ const AboutBtns = (props: Props) => {
           margin="mx-0"
         />
         <StyledBtn
-          text="DOWNLOAD CV"
+          text="Download CV"
           isLink={true}
+          isDropdown={true}
           target="_blank"
-          href="https://drive.google.com/uc?export=download&id=1ly46sMoFUXEh0R1gw56w24DKR0_R7HoF"
-          hoverOpacity={true}
+          dropdownOptions={[
+            {
+              label: "Software/Frontend Developer",
+              href: "https://drive.google.com/uc?export=download&id=1A4kBYAl0JU-NlJBbKZpGhZNP782d8ZW_",
+            },
+            {
+              label: "Mobile/Flutter Developer",
+              href: "https://drive.google.com/uc?export=download&id=1n0YMSVuQBVK3xcif3C1hXoAME4Qt-DXZ",
+            },
+          ]}
           btnColor="bg-gray-500 dark:bg-gray-200"
           textColor="dark:text-[#181B1A] text-white"
-          // onClick={() => {}}
           margin="mx-0"
         />
       </div>
