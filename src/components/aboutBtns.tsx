@@ -24,7 +24,7 @@ const AboutBtns = (props: Props) => {
           dropdownOptions={[
             {
               label: "Software/Frontend Developer",
-              href: "https://drive.google.com/uc?export=download&id=1A4kBYAl0JU-NlJBbKZpGhZNP782d8ZW_",
+              href: "https://drive.google.com/uc?export=download&id=10fcRr8BK4zjyynHJbL2jFPjgKocouKN7",
             },
             {
               label: "Mobile/Flutter Developer",
