@@ -26,7 +26,7 @@ const Experience = () => {
     {
       position: "Freelance/Project-based Software Developer",
       company: "Project-based Clients",
-      date: "Sep - Aug 2024",
+      date: "Sep 2023 - Aug 2024",
       description:
         "Worked on various web-based and android-based systems. Communicated with clients and transformed prototypes into functional systems that met project goals and deadlines.",
       tech: "HTML, CSS, Javascript, Typescript, Next.js, React, Tailwind, Bootstrap, PHP, MySQL, Flutter, and Firebase",
