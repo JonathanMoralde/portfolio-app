@@ -23,12 +23,12 @@ const AboutBtns = (props: Props) => {
           target="_blank"
           dropdownOptions={[
             {
-              label: "Software/Frontend Developer",
-              href: "https://drive.google.com/uc?export=download&id=10fcRr8BK4zjyynHJbL2jFPjgKocouKN7",
+              label: "Software/Web/Frontend Developer",
+              href: "https://drive.google.com/uc?export=download&id=1KDq5JHZ78DWydXkzmE7dqQk0BkmgFhif",
             },
             {
               label: "Mobile/Flutter Developer",
-              href: "https://drive.google.com/uc?export=download&id=1n0YMSVuQBVK3xcif3C1hXoAME4Qt-DXZ",
+              href: "https://drive.google.com/uc?export=download&id=1LyKXRO7ypX5EXK9GyIZ4v5VY1M-N6F4l",
             },
           ]}
           btnColor="bg-gray-500 dark:bg-gray-200"
